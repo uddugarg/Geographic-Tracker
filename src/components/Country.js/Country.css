@@ -1,0 +1,140 @@
+.country{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url(https://cdn.pixabay.com/photo/2017/06/14/08/20/map-of-the-world-2401458_960_720.jpg);
+    background-size: cover;
+}
+@media screen and (max-width: 768px){
+    .country{
+        overflow: auto;
+    }
+}
+
+.country__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (max-width: 768px){
+    .country__section{
+        flex-direction: column;
+    }
+}
+
+.left{
+    flex: 0.6 !important;
+    width: 60%;
+}
+@media screen and (max-width: 768px){
+    .left{
+        width: 100vw;
+    }
+}
+
+img{
+    width: 850px;
+    height: 570px;
+    object-fit: contain;
+}
+@media screen and (max-width: 768px){
+    img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 468px){
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+
+.country__abbr{
+    margin-left: 20px;
+}
+@media screen and (max-width: 768px){
+    .country__abbr{
+       margin-left: 10px;
+       margin-top: -20px;
+    }
+}
+@media screen and (max-width: 468px){
+    .country__abbr{
+       margin-top: 20px;
+    }
+}
+
+
+
+.country__abbr > h2{
+    font-family: Dela Gothic One;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 468px){
+    .country__abbr > h2{
+       font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 468px){
+    .country__abbr > span{
+       font-size: 12px;
+    }
+}
+
+
+.country__abbr > h2 > span{
+    font-family: cursive;
+    font-size: 10px;
+    color: whitesmoke;
+    margin-left: 10px;
+}
+@media screen and (max-width: 468px){
+    .country__abbr > h2 > span{
+       font-size: 9px;
+    }
+}
+
+
+.left > span{
+    margin-left: 20px;
+}
+
+.right{
+    flex: 0.4 !important;
+    width: 40%;
+}
+@media screen and (max-width: 768px){
+    .right{
+        width: 100%;
+    }
+}
+
+.right > p{
+    font-family: Cinzel;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: 25px;
+    line-height: 9vmin;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 768px){
+    .right > p{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 468px){
+    .right > p{
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
