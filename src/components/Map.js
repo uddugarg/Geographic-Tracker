@@ -46,7 +46,7 @@ function Map({ center, zoom }) {
             {!loading ? (
                 <div className='map'>
                     <GoogleMapReact
-                        bootstrapURLKeys={{ key: "AIzaSyCfOhhDFZh-OUCdzEvPG9gSnOq2Bi_Cz_g" }}
+                        bootstrapURLKeys={{ key: " " }}
                         defaultCenter={center}
                         defaultZoom={zoom}
                     >
